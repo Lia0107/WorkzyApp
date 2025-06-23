@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Workzy App</string>
+
+    <string-array name="spinner_items">
+        <item>Option A</item>
+        <item>Option B</item>
+        <item>Option C</item>
+    </string-array>
 </resources>

@@ -16,11 +16,4 @@ public class CoversationModel {
         return sender;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public void setSender(String sender) {
-        this.sender = sender;
-    }
 }

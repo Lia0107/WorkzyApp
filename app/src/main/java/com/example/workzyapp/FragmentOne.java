@@ -16,8 +16,7 @@ public class FragmentOne extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_one, container, false);
         Button button = view.findViewById(R.id.button_fragment_one);
-        button.setOnClickListener(v -> Toast.makeText(getActivity(), "Hello from Fragment
-                One!", Toast.LENGTH_SHORT).show());
+        button.setOnClickListener(v -> Toast.makeText(getActivity(), "Hello from Fragment One!", Toast.LENGTH_SHORT).show());
         return view;
 
     }

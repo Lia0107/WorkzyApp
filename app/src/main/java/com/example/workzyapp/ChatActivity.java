@@ -12,8 +12,16 @@ public class ChatActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_chat);
 
+        recyclerView = findViewById(R.id.recycler_view_chat);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        int chatId = getIntent().getIntExtra("chatId", 0);
+        conversationList = generateConversation(chatId);
+
+        ConversationAdapter adapter = new ConversationAdapter(conversationList);
+        recyclerView.setAdapter(adapter);
 
     }
 
