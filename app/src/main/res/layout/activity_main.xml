@@ -25,5 +25,5 @@
         android:id="@+id/btn_forum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Open Forum"/>
+        android:text="Open Todo List"/>
 </LinearLayout>

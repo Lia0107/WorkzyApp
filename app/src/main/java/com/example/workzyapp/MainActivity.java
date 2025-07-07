@@ -11,9 +11,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        loadFragment(new FragmentOne());
-        findViewById(R.id.btn_one).setOnClickListener(v -> loadFragment(new FragmentOne()));
-        findViewById(R.id.btn_two).setOnClickListener(v -> loadFragment(new FragmentTwo()));
+        loadFragment(new com.example.workzyapp.FragmentOne());
+        findViewById(R.id.btn_one).setOnClickListener(v -> loadFragment(new com.example.workzyapp.FragmentOne()));
+        findViewById(R.id.btn_two).setOnClickListener(v -> loadFragment(new com.example.workzyapp.FragmentTwo()));
         findViewById(R.id.btn_three).setOnClickListener(v -> loadFragment(new FragmentThree()));
         Button btnForum = findViewById(R.id.btn_forum);
         btnForum.setOnClickListener(v -> startActivity(new Intent(this,

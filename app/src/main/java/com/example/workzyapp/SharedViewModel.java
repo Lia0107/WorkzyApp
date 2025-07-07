@@ -2,6 +2,7 @@ package com.example.workzyapp;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
 public class SharedViewModel extends ViewModel {
     private final MutableLiveData<String> selectedText = new MutableLiveData<>();
 
